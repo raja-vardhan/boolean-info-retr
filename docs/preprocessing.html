@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>preprocessing API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>preprocessing</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">import glob
+import os
+from helper import *
+from invertedIndex import *
+from nltk.tokenize import sent_tokenize , word_tokenize, punkt
+
+
+
+def findAllUniqueWords(unique_words_all, unique_words_all_un, file_folder, files_with_index, Stopwords, ps):
+  &#39;&#39;&#39;Find all the unique words in the entire dataset of documents
+     before and after performing stemming.
+
+     Parameters:
+          **unique_words_all** ( *list* ): List containing stemmed unique words and their frequencies
+
+          **unique_words_all_un** ( *list* ): List containing unstemmed unique words and their frequencies
+
+          **file_folder** ( *str* ): The path to the dataset
+
+          **files_with_index** ( *dict* ) : Dictionary to associate filenames to a unique numeric index
+
+          **Stopwords** ( *set* ): Set of stopwords
+
+          **ps** ( *PorterStemmer object* ): Class object which performs stemming
+    
+
+     After the execution of the function, **unique_words_all** and 
+     **unique_words_all_un** will be altered for future
+     preprocessing.
+     &#39;&#39;&#39;
+  dict_global = {}
+  dict_global_un = {}   # dict_global dictionary 
+  idx = 1   # number the documents starting from 1
+  for file in glob.iglob(f&#39;{file_folder}/*&#39;):
+      # print(file)
+      fname = file
+      file = open(file , &#34;r&#34;)                  # Open and
+      text = file.read()                       # read file
+      text = remove_special_characters(text)   # Remove special characters
+      text = re.sub(re.compile(&#39;\d&#39;),&#39;&#39;,text)  # Remove digits from text
+      words = word_tokenize(text)              # Tokenized &#39;words&#39; array
+      words = [word for word in words if len(words)&gt;1]  # Remove words with length = 1
+      words = [word.lower() for word in words]          # Convert word to lowercase
+      words = [word for word in words if word not in Stopwords]  # Remove stopwords
+      temp = words
+      words = [ps.stem(word) for word in words]                  # Stemming 
+      # words = [word.lower() for word in words]                  
+      dict_global.update(finding_all_unique_words_and_freq(words))  # Update global dictionary
+      dict_global_un.update(finding_all_unique_words_and_freq(temp))
+      files_with_index[idx] = file_folder + &#39;/&#39;
+      files_with_index[idx] = files_with_index[idx] + os.path.basename(fname)              # Put file into files_with_index array
+      idx = idx + 1                                                # and update index
+  unique_words_all_un = list(set(dict_global_un.keys())) 
+  unique_words_all = list(set(dict_global.keys()))  
+
+
+
+
+
+
+
+
+def initialiseInvertedIndex(unique_words_all, linked_list_data, files_with_index, Stopwords, ps):
+  &#39;&#39;&#39;Initialise the inverted index data structure for all the words.
+
+     Parameters:
+          **unique_words_all** ( *list* ): List containing the set of all unique words.
+
+          **linked_list_data** ( *dict* ): Dictionary with the word as key and its inverted index list as the value.
+
+          **files_with_index** ( *dict* ): Dictionary with a numeric index as key and filename as value.
+
+          **Stopwords** ( *set* ): Set of all stopwords.
+
+          **ps** ( *PorterStemmer object* ): Class object which performs stemming.
+      
+      After the execution of the function, **linked_list_data** will contain the inverted index
+      for each unique word in the dataset
+  &#39;&#39;&#39;
+  for word in unique_words_all:                      # For each word,
+      linked_list_data[word] = SlinkedList()         # create head
+      linked_list_data[word].head = Node(1,Node)     # and head is pointing to a dummy node
+  word_freq_in_doc = {}                              # Word freq in a particular document
+  for idx, file in files_with_index.items():                  # For each file,
+    file = open(file, &#34;r&#34;)                         # open
+    text = file.read()                             # read
+    text = remove_special_characters(text)         # remove spc char
+    text = re.sub(re.compile(&#39;\d&#39;),&#39;&#39;,text)        # remove digits
+    words = word_tokenize(text)                    # return list of words
+    words = [word for word in words if len(words)&gt;1] # remove words of len 1
+    words = [word.lower() for word in words]         # convert words to lowercase
+    words = [word for word in words if word not in Stopwords] # remove stopwords
+    words = [ps.stem(word) for word in words]             # stemming            
+    word_freq_in_doc = finding_all_unique_words_and_freq(words) # Find word freq in a particular file
+    for word in word_freq_in_doc.keys():                        # Populate word_freq_in_doc
+      linked_list = linked_list_data[word].head               # Get head of inverted index of that word
+      while linked_list.nextval is not None:                  # Go to end of inverted index
+        linked_list = linked_list.nextval                   
+      linked_list.nextval = Node(idx ,word_freq_in_doc[word]) # Create new node with doc idx and freq in doc
+
+
+
+
+
+
+
+
+# permuterm
+def invertedIndexForPermutations(inverted_index, files_with_index, Stopwords, ps):
+  &#39;&#39;&#39;Initialise the inverted index data structure for each word and its permutations 
+     to help perform wildcard searches.
+
+     Parameters:
+          **inverted_index** ( *dict* ): Dictionary containing inverted index for each word appended with a &#39;$&#39; at
+          the end and its premutations
+
+          **files_with_index** ( *dict* ): Dictionary with a numeric index as key and filename as value.
+
+          **Stopwords** ( *set* ): Set of all stopwords.
+
+          **ps** ( *PorterStemmer object* ): Class object which performs stemming.
+      
+      After the execution of the function, **inverted_index** will contain the inverted index for each word and
+      its permutations.
+  &#39;&#39;&#39;
+  for idx, file in files_with_index.items():
+    fname = file
+    file = open(file, &#34;r&#34;)
+    text = file.read()
+    text = remove_special_characters(text)
+    text = re.sub(re.compile(&#39;\d&#39;),&#39;&#39;,text)
+    words = word_tokenize(text)
+    words = [word for word in words if len(words)&gt;1]
+    words = [word.lower() for word in words]
+    words = [word for word in words if word not in Stopwords]
+    words = [ps.stem(word) for word in words]
+      
+    for word in words:                                    
+      perms = list()                              # List for all permutations of that word
+      n = len(word)                               #
+      temp = list(word)                           # Conver word to list
+      temp.append(&#34;$&#34;)                            # and append $
+
+      i = 1                                       
+      while i&lt;=n+1:                               
+        ans = &#34;&#34;.join(temp)                       # Convert list to word
+        perms.append(ans)                         # Append to perms list
+        r = temp.pop()                            # Do for all permutations
+        temp.insert(0,r)                          
+        i+=1
+
+      for word in perms:
+        if word not in inverted_index.keys():     # Build inverted index 
+          inverted_index[word] = {idx}            # for all permuatations
+        else:
+          inverted_index[word].add(idx) 
+
+
+
+
+
+
+
+
+def permuterm(query, inverted_index):                # Parameter is single query term
+  &#39;&#39;&#39;Get all words matching a given wildcard search query term.
+
+     Parameters:
+            **query** ( *str* ): Wildcard search query term. 
+
+            **inverted_index** ( *dict* ): Inverted index data strucuture for all words and their permutations
+            built using *invertedIndexForPermutations* function.
+
+     Returns:
+            A list of words matching the wildcard search query term.
+  &#39;&#39;&#39;
+
+  query = list(query)                # Convert term to list
+  temp = query.copy()                      
+
+  query.append(&#34;$&#34;)                  # Append $ to query
+
+
+  if temp[-1]==&#34;*&#34; and temp[0] == &#34;*&#34;:  # If * is present at first and last pos, remove * from first pos
+    query.pop(0)                        
+    temp.pop(0)
+
+  elif temp[0]==&#34;*&#34;:                    # If * is present at first pos, append at end
+    t = query.pop(0)
+    query.append(t)
+
+  elif temp[-1]==&#34;*&#34;:
+    pass
+
+  else:
+    while query[-1] != &#34;*&#34;:             # Move to last if it is somewhere in the middle
+      t = query.pop(0)
+      query.append(t)
+
+  ans = list()                          # Store all words which satisfy the query (in rotated form)
+  query.pop()                           # Pop *
+  query = &#34;&#34;.join(query)                # Convert to string
+  print(query)                    
+  n = len(query)                  
+  check_list = list(inverted_index.keys())   # All words in the inverted index
+  final_list = list()                        # Store all words which satisfy the query
+
+  for word in check_list:                    # Convert words to original form
+    if query == word[0:n]:
+      ans.append(word)
+
+  for word in ans:
+    temp = list(word)
+    if word[0]==&#34;$&#34;:
+      temp.pop(0)
+    elif word[-1]==&#34;$&#34;:
+      temp.pop()
+
+    else:
+      temp = list(word)
+      while temp[-1]!=&#34;$&#34;:
+        t = temp.pop(0)
+        temp.append(t)
+
+      temp.pop()
+      word = &#34;&#34;.join(temp)
+    word = &#34;&#34;.join(temp)
+    final_list.append(word)
+
+  return final_list             # return words
+
+
+
+
+
+
+def documents(different_words, connecting_words, unique_words_all, files_with_index, linked_list_data):             # different words - query terms, connecting words - boolean oper
+  &#39;&#39;&#39;Get the final result vector.
+
+     Parameters:
+            **different_words** ( *list* ): List of search words in the Boolean query.
+
+            **connecting_words** ( *list* ): List of connecting words/Boolean operators in the query.
+      
+     Returns:
+            A list of 0&#39;s and 1&#39;s with size equal to the number of files in the dataset.
+            If the entry at position i is 1, the document with index i satisfies the query and
+            if it is 0, it doesn&#39;t.
+  &#39;&#39;&#39;
+  print(connecting_words)                                    
+  total_files = len(files_with_index)                         
+  zeroes_and_ones = []                                        # Result vector
+  zeroes_and_ones_of_all_words = []                           # Result vector for all words stored as a list
+  for word in (different_words):                              # process each word in query terms                             
+      if word.lower() in unique_words_all:                    # if word exists in corpus
+          zeroes_and_ones = [0] * total_files                 # Initialise bitmap with all 0s
+          linkedlist = linked_list_data[word].head            # Head of inverted index of that word
+          # print(word) 
+          while linkedlist.nextval is not None:                 # Put 1 in the bitmap
+              zeroes_and_ones[linkedlist.nextval.doc - 1] = 1   # if the word exists in the corresponding
+              linkedlist = linkedlist.nextval                   # document and advance pointer
+          zeroes_and_ones_of_all_words.append(zeroes_and_ones)  # Append bitmap for that word to list of all bitmaps
+      else:
+          zeroes_and_ones_of_all_words.append([0] * total_files)
+
+  # print(zeroes_and_ones_of_all_words)
+  for word in connecting_words:                                  # Processing boolean operators
+      word_list1 = zeroes_and_ones_of_all_words[0]              
+      word_list2 = zeroes_and_ones_of_all_words[1]               
+      if word == &#34;and&#34;:                                          
+          bitwise_op = [w1 &amp; w2 for (w1,w2) in zip(word_list1,word_list2)]
+          zeroes_and_ones_of_all_words.remove(word_list1)
+          zeroes_and_ones_of_all_words.remove(word_list2)
+          zeroes_and_ones_of_all_words.insert(0, bitwise_op);
+      elif word == &#34;or&#34;:
+          bitwise_op = [w1 | w2 for (w1,w2) in zip(word_list1,word_list2)]
+          zeroes_and_ones_of_all_words.remove(word_list1)
+          zeroes_and_ones_of_all_words.remove(word_list2)
+          zeroes_and_ones_of_all_words.insert(0, bitwise_op);
+      elif word == &#34;not&#34;:
+          bitwise_op = [not w1 for w1 in word_list2]
+          bitwise_op = [int(b == True) for b in bitwise_op]
+          zeroes_and_ones_of_all_words.remove(word_list2)
+          zeroes_and_ones_of_all_words.remove(word_list1)
+          bitwise_op = [w1 &amp; w2 for (w1,w2) in zip(word_list1,bitwise_op)]
+
+  zeroes_and_ones_of_all_words.insert(0, bitwise_op);              # Final bitmap
+          
+  files = []                                                                             
+  # print(zeroes_and_ones_of_all_words)
+  lisa = zeroes_and_ones_of_all_words[0]
+  cnt = 1
+  for index in lisa:
+      if index == 1:
+          files.append(files_with_index[cnt])
+      cnt = cnt+1
+      
+  return files                                             # Return files satisfying query</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="preprocessing.documents"><code class="name flex">
+<span>def <span class="ident">documents</span></span>(<span>different_words, connecting_words, unique_words_all, files_with_index, linked_list_data)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Get the final result vector.</p>
+<h2 id="parameters">Parameters</h2>
+<p><strong>different_words</strong> ( <em>list</em> ): List of search words in the Boolean query.</p>
+<p><strong>connecting_words</strong> ( <em>list</em> ): List of connecting words/Boolean operators in the query.</p>
+<h2 id="returns">Returns</h2>
+<p>A list of 0's and 1's with size equal to the number of files in the dataset.
+If the entry at position i is 1, the document with index i satisfies the query and
+if it is 0, it doesn't.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def documents(different_words, connecting_words, unique_words_all, files_with_index, linked_list_data):             # different words - query terms, connecting words - boolean oper
+  &#39;&#39;&#39;Get the final result vector.
+
+     Parameters:
+            **different_words** ( *list* ): List of search words in the Boolean query.
+
+            **connecting_words** ( *list* ): List of connecting words/Boolean operators in the query.
+      
+     Returns:
+            A list of 0&#39;s and 1&#39;s with size equal to the number of files in the dataset.
+            If the entry at position i is 1, the document with index i satisfies the query and
+            if it is 0, it doesn&#39;t.
+  &#39;&#39;&#39;
+  print(connecting_words)                                    
+  total_files = len(files_with_index)                         
+  zeroes_and_ones = []                                        # Result vector
+  zeroes_and_ones_of_all_words = []                           # Result vector for all words stored as a list
+  for word in (different_words):                              # process each word in query terms                             
+      if word.lower() in unique_words_all:                    # if word exists in corpus
+          zeroes_and_ones = [0] * total_files                 # Initialise bitmap with all 0s
+          linkedlist = linked_list_data[word].head            # Head of inverted index of that word
+          # print(word) 
+          while linkedlist.nextval is not None:                 # Put 1 in the bitmap
+              zeroes_and_ones[linkedlist.nextval.doc - 1] = 1   # if the word exists in the corresponding
+              linkedlist = linkedlist.nextval                   # document and advance pointer
+          zeroes_and_ones_of_all_words.append(zeroes_and_ones)  # Append bitmap for that word to list of all bitmaps
+      else:
+          zeroes_and_ones_of_all_words.append([0] * total_files)
+
+  # print(zeroes_and_ones_of_all_words)
+  for word in connecting_words:                                  # Processing boolean operators
+      word_list1 = zeroes_and_ones_of_all_words[0]              
+      word_list2 = zeroes_and_ones_of_all_words[1]               
+      if word == &#34;and&#34;:                                          
+          bitwise_op = [w1 &amp; w2 for (w1,w2) in zip(word_list1,word_list2)]
+          zeroes_and_ones_of_all_words.remove(word_list1)
+          zeroes_and_ones_of_all_words.remove(word_list2)
+          zeroes_and_ones_of_all_words.insert(0, bitwise_op);
+      elif word == &#34;or&#34;:
+          bitwise_op = [w1 | w2 for (w1,w2) in zip(word_list1,word_list2)]
+          zeroes_and_ones_of_all_words.remove(word_list1)
+          zeroes_and_ones_of_all_words.remove(word_list2)
+          zeroes_and_ones_of_all_words.insert(0, bitwise_op);
+      elif word == &#34;not&#34;:
+          bitwise_op = [not w1 for w1 in word_list2]
+          bitwise_op = [int(b == True) for b in bitwise_op]
+          zeroes_and_ones_of_all_words.remove(word_list2)
+          zeroes_and_ones_of_all_words.remove(word_list1)
+          bitwise_op = [w1 &amp; w2 for (w1,w2) in zip(word_list1,bitwise_op)]
+
+  zeroes_and_ones_of_all_words.insert(0, bitwise_op);              # Final bitmap
+          
+  files = []                                                                             
+  # print(zeroes_and_ones_of_all_words)
+  lisa = zeroes_and_ones_of_all_words[0]
+  cnt = 1
+  for index in lisa:
+      if index == 1:
+          files.append(files_with_index[cnt])
+      cnt = cnt+1
+      
+  return files                                             # Return files satisfying query</code></pre>
+</details>
+</dd>
+<dt id="preprocessing.findAllUniqueWords"><code class="name flex">
+<span>def <span class="ident">findAllUniqueWords</span></span>(<span>unique_words_all, unique_words_all_un, file_folder, files_with_index, Stopwords, ps)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Find all the unique words in the entire dataset of documents
+before and after performing stemming.</p>
+<h2 id="parameters">Parameters</h2>
+<p><strong>unique_words_all</strong> ( <em>list</em> ): List containing stemmed unique words and their frequencies</p>
+<p><strong>unique_words_all_un</strong> ( <em>list</em> ): List containing unstemmed unique words and their frequencies</p>
+<p><strong>file_folder</strong> ( <em>str</em> ): The path to the dataset</p>
+<p><strong>files_with_index</strong> ( <em>dict</em> ) : Dictionary to associate filenames to a unique numeric index</p>
+<p><strong>Stopwords</strong> ( <em>set</em> ): Set of stopwords</p>
+<p><strong>ps</strong> ( <em>PorterStemmer object</em> ): Class object which performs stemming</p>
+<p>After the execution of the function, <strong>unique_words_all</strong> and
+<strong>unique_words_all_un</strong> will be altered for future
+preprocessing.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def findAllUniqueWords(unique_words_all, unique_words_all_un, file_folder, files_with_index, Stopwords, ps):
+  &#39;&#39;&#39;Find all the unique words in the entire dataset of documents
+     before and after performing stemming.
+
+     Parameters:
+          **unique_words_all** ( *list* ): List containing stemmed unique words and their frequencies
+
+          **unique_words_all_un** ( *list* ): List containing unstemmed unique words and their frequencies
+
+          **file_folder** ( *str* ): The path to the dataset
+
+          **files_with_index** ( *dict* ) : Dictionary to associate filenames to a unique numeric index
+
+          **Stopwords** ( *set* ): Set of stopwords
+
+          **ps** ( *PorterStemmer object* ): Class object which performs stemming
+    
+
+     After the execution of the function, **unique_words_all** and 
+     **unique_words_all_un** will be altered for future
+     preprocessing.
+     &#39;&#39;&#39;
+  dict_global = {}
+  dict_global_un = {}   # dict_global dictionary 
+  idx = 1   # number the documents starting from 1
+  for file in glob.iglob(f&#39;{file_folder}/*&#39;):
+      # print(file)
+      fname = file
+      file = open(file , &#34;r&#34;)                  # Open and
+      text = file.read()                       # read file
+      text = remove_special_characters(text)   # Remove special characters
+      text = re.sub(re.compile(&#39;\d&#39;),&#39;&#39;,text)  # Remove digits from text
+      words = word_tokenize(text)              # Tokenized &#39;words&#39; array
+      words = [word for word in words if len(words)&gt;1]  # Remove words with length = 1
+      words = [word.lower() for word in words]          # Convert word to lowercase
+      words = [word for word in words if word not in Stopwords]  # Remove stopwords
+      temp = words
+      words = [ps.stem(word) for word in words]                  # Stemming 
+      # words = [word.lower() for word in words]                  
+      dict_global.update(finding_all_unique_words_and_freq(words))  # Update global dictionary
+      dict_global_un.update(finding_all_unique_words_and_freq(temp))
+      files_with_index[idx] = file_folder + &#39;/&#39;
+      files_with_index[idx] = files_with_index[idx] + os.path.basename(fname)              # Put file into files_with_index array
+      idx = idx + 1                                                # and update index
+  unique_words_all_un = list(set(dict_global_un.keys())) 
+  unique_words_all = list(set(dict_global.keys()))  </code></pre>
+</details>
+</dd>
+<dt id="preprocessing.initialiseInvertedIndex"><code class="name flex">
+<span>def <span class="ident">initialiseInvertedIndex</span></span>(<span>unique_words_all, linked_list_data, files_with_index, Stopwords, ps)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Initialise the inverted index data structure for all the words.</p>
+<h2 id="parameters">Parameters</h2>
+<p><strong>unique_words_all</strong> ( <em>list</em> ): List containing the set of all unique words.</p>
+<p><strong>linked_list_data</strong> ( <em>dict</em> ): Dictionary with the word as key and its inverted index list as the value.</p>
+<p><strong>files_with_index</strong> ( <em>dict</em> ): Dictionary with a numeric index as key and filename as value.</p>
+<p><strong>Stopwords</strong> ( <em>set</em> ): Set of all stopwords.</p>
+<p><strong>ps</strong> ( <em>PorterStemmer object</em> ): Class object which performs stemming.</p>
+<p>After the execution of the function, <strong>linked_list_data</strong> will contain the inverted index
+for each unique word in the dataset</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def initialiseInvertedIndex(unique_words_all, linked_list_data, files_with_index, Stopwords, ps):
+  &#39;&#39;&#39;Initialise the inverted index data structure for all the words.
+
+     Parameters:
+          **unique_words_all** ( *list* ): List containing the set of all unique words.
+
+          **linked_list_data** ( *dict* ): Dictionary with the word as key and its inverted index list as the value.
+
+          **files_with_index** ( *dict* ): Dictionary with a numeric index as key and filename as value.
+
+          **Stopwords** ( *set* ): Set of all stopwords.
+
+          **ps** ( *PorterStemmer object* ): Class object which performs stemming.
+      
+      After the execution of the function, **linked_list_data** will contain the inverted index
+      for each unique word in the dataset
+  &#39;&#39;&#39;
+  for word in unique_words_all:                      # For each word,
+      linked_list_data[word] = SlinkedList()         # create head
+      linked_list_data[word].head = Node(1,Node)     # and head is pointing to a dummy node
+  word_freq_in_doc = {}                              # Word freq in a particular document
+  for idx, file in files_with_index.items():                  # For each file,
+    file = open(file, &#34;r&#34;)                         # open
+    text = file.read()                             # read
+    text = remove_special_characters(text)         # remove spc char
+    text = re.sub(re.compile(&#39;\d&#39;),&#39;&#39;,text)        # remove digits
+    words = word_tokenize(text)                    # return list of words
+    words = [word for word in words if len(words)&gt;1] # remove words of len 1
+    words = [word.lower() for word in words]         # convert words to lowercase
+    words = [word for word in words if word not in Stopwords] # remove stopwords
+    words = [ps.stem(word) for word in words]             # stemming            
+    word_freq_in_doc = finding_all_unique_words_and_freq(words) # Find word freq in a particular file
+    for word in word_freq_in_doc.keys():                        # Populate word_freq_in_doc
+      linked_list = linked_list_data[word].head               # Get head of inverted index of that word
+      while linked_list.nextval is not None:                  # Go to end of inverted index
+        linked_list = linked_list.nextval                   
+      linked_list.nextval = Node(idx ,word_freq_in_doc[word]) # Create new node with doc idx and freq in doc</code></pre>
+</details>
+</dd>
+<dt id="preprocessing.invertedIndexForPermutations"><code class="name flex">
+<span>def <span class="ident">invertedIndexForPermutations</span></span>(<span>inverted_index, files_with_index, Stopwords, ps)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Initialise the inverted index data structure for each word and its permutations
+to help perform wildcard searches.</p>
+<h2 id="parameters">Parameters</h2>
+<p><strong>inverted_index</strong> ( <em>dict</em> ): Dictionary containing inverted index for each word appended with a '$' at
+the end and its premutations</p>
+<p><strong>files_with_index</strong> ( <em>dict</em> ): Dictionary with a numeric index as key and filename as value.</p>
+<p><strong>Stopwords</strong> ( <em>set</em> ): Set of all stopwords.</p>
+<p><strong>ps</strong> ( <em>PorterStemmer object</em> ): Class object which performs stemming.</p>
+<p>After the execution of the function, <strong>inverted_index</strong> will contain the inverted index for each word and
+its permutations.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def invertedIndexForPermutations(inverted_index, files_with_index, Stopwords, ps):
+  &#39;&#39;&#39;Initialise the inverted index data structure for each word and its permutations 
+     to help perform wildcard searches.
+
+     Parameters:
+          **inverted_index** ( *dict* ): Dictionary containing inverted index for each word appended with a &#39;$&#39; at
+          the end and its premutations
+
+          **files_with_index** ( *dict* ): Dictionary with a numeric index as key and filename as value.
+
+          **Stopwords** ( *set* ): Set of all stopwords.
+
+          **ps** ( *PorterStemmer object* ): Class object which performs stemming.
+      
+      After the execution of the function, **inverted_index** will contain the inverted index for each word and
+      its permutations.
+  &#39;&#39;&#39;
+  for idx, file in files_with_index.items():
+    fname = file
+    file = open(file, &#34;r&#34;)
+    text = file.read()
+    text = remove_special_characters(text)
+    text = re.sub(re.compile(&#39;\d&#39;),&#39;&#39;,text)
+    words = word_tokenize(text)
+    words = [word for word in words if len(words)&gt;1]
+    words = [word.lower() for word in words]
+    words = [word for word in words if word not in Stopwords]
+    words = [ps.stem(word) for word in words]
+      
+    for word in words:                                    
+      perms = list()                              # List for all permutations of that word
+      n = len(word)                               #
+      temp = list(word)                           # Conver word to list
+      temp.append(&#34;$&#34;)                            # and append $
+
+      i = 1                                       
+      while i&lt;=n+1:                               
+        ans = &#34;&#34;.join(temp)                       # Convert list to word
+        perms.append(ans)                         # Append to perms list
+        r = temp.pop()                            # Do for all permutations
+        temp.insert(0,r)                          
+        i+=1
+
+      for word in perms:
+        if word not in inverted_index.keys():     # Build inverted index 
+          inverted_index[word] = {idx}            # for all permuatations
+        else:
+          inverted_index[word].add(idx) </code></pre>
+</details>
+</dd>
+<dt id="preprocessing.permuterm"><code class="name flex">
+<span>def <span class="ident">permuterm</span></span>(<span>query, inverted_index)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Get all words matching a given wildcard search query term.</p>
+<h2 id="parameters">Parameters</h2>
+<p><strong>query</strong> ( <em>str</em> ): Wildcard search query term. </p>
+<p><strong>inverted_index</strong> ( <em>dict</em> ): Inverted index data strucuture for all words and their permutations
+built using <em>invertedIndexForPermutations</em> function.</p>
+<h2 id="returns">Returns</h2>
+<p>A list of words matching the wildcard search query term.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def permuterm(query, inverted_index):                # Parameter is single query term
+  &#39;&#39;&#39;Get all words matching a given wildcard search query term.
+
+     Parameters:
+            **query** ( *str* ): Wildcard search query term. 
+
+            **inverted_index** ( *dict* ): Inverted index data strucuture for all words and their permutations
+            built using *invertedIndexForPermutations* function.
+
+     Returns:
+            A list of words matching the wildcard search query term.
+  &#39;&#39;&#39;
+
+  query = list(query)                # Convert term to list
+  temp = query.copy()                      
+
+  query.append(&#34;$&#34;)                  # Append $ to query
+
+
+  if temp[-1]==&#34;*&#34; and temp[0] == &#34;*&#34;:  # If * is present at first and last pos, remove * from first pos
+    query.pop(0)                        
+    temp.pop(0)
+
+  elif temp[0]==&#34;*&#34;:                    # If * is present at first pos, append at end
+    t = query.pop(0)
+    query.append(t)
+
+  elif temp[-1]==&#34;*&#34;:
+    pass
+
+  else:
+    while query[-1] != &#34;*&#34;:             # Move to last if it is somewhere in the middle
+      t = query.pop(0)
+      query.append(t)
+
+  ans = list()                          # Store all words which satisfy the query (in rotated form)
+  query.pop()                           # Pop *
+  query = &#34;&#34;.join(query)                # Convert to string
+  print(query)                    
+  n = len(query)                  
+  check_list = list(inverted_index.keys())   # All words in the inverted index
+  final_list = list()                        # Store all words which satisfy the query
+
+  for word in check_list:                    # Convert words to original form
+    if query == word[0:n]:
+      ans.append(word)
+
+  for word in ans:
+    temp = list(word)
+    if word[0]==&#34;$&#34;:
+      temp.pop(0)
+    elif word[-1]==&#34;$&#34;:
+      temp.pop()
+
+    else:
+      temp = list(word)
+      while temp[-1]!=&#34;$&#34;:
+        t = temp.pop(0)
+        temp.append(t)
+
+      temp.pop()
+      word = &#34;&#34;.join(temp)
+    word = &#34;&#34;.join(temp)
+    final_list.append(word)
+
+  return final_list             # return words</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="preprocessing.documents" href="#preprocessing.documents">documents</a></code></li>
+<li><code><a title="preprocessing.findAllUniqueWords" href="#preprocessing.findAllUniqueWords">findAllUniqueWords</a></code></li>
+<li><code><a title="preprocessing.initialiseInvertedIndex" href="#preprocessing.initialiseInvertedIndex">initialiseInvertedIndex</a></code></li>
+<li><code><a title="preprocessing.invertedIndexForPermutations" href="#preprocessing.invertedIndexForPermutations">invertedIndexForPermutations</a></code></li>
+<li><code><a title="preprocessing.permuterm" href="#preprocessing.permuterm">permuterm</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>

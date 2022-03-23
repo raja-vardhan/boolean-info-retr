@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>helper API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>helper</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">import re
+
+def finding_all_unique_words_and_freq(words):
+    &#39;&#39;&#39;Find all the unique words and their frequencies in a string.
+        
+        Parameters:
+          **words** ( *str* ): String to be searched for unique words.
+        
+        Returns:
+          A dictionary with key as a word and value as frequency for that word
+          for each word in the parameter **words**.
+    &#39;&#39;&#39;
+    words_unique = []   # array to store unique words in &#39;words&#39;
+    word_freq = {}      # dictionary to store frequency of each word in &#39;words&#39;
+
+    for word in words:               
+        if word not in words_unique:        # Fill words_unique array
+            words_unique.append(word)
+    
+    for word in words_unique:
+        word_freq[word] = words.count(word)  # Fill word_freq dict
+    return word_freq
+
+def finding_freq_of_word_in_doc(word,words):  # Find count of &#39;word&#39; in &#39;words&#39;
+  &#39;&#39;&#39;Get the number of times a word occurs in a string.
+    
+    Parameters:
+        **word** ( *str* ): String to find
+
+        **words** ( *str* ): String to be searched for finding &#39;word&#39;
+    
+    Returns:
+      Number of occurences of *word* in *words*.
+
+  &#39;&#39;&#39;
+  return words.count(word)
+        
+def remove_special_characters(text):          # Remove all chars
+  &#39;&#39;&#39;Remove special characters in a string.
+
+     Parameters:
+          **text** ( *str* ): String to remove special characters from.
+      
+     Returns:
+          Modified string which contains only alphanumeric characters from the original string.
+  &#39;&#39;&#39;
+  regex = re.compile(&#39;[^a-zA-Z0-9\s]&#39;)      # except alphanumeric and spaces
+  text_returned = re.sub(regex,&#39;&#39;,text)
+  return text_returned
+
+def contains_star(word):                      # Check if the word contains a *
+  &#39;&#39;&#39;Find if the char * appears in a word.
+     Parameters:
+          **word** ( *str* ): String to be searched.
+      
+     Returns:
+          Boolean value True if * occurs in the string *word* and False otherwise.
+  &#39;&#39;&#39;
+  for v in word:
+    if v==&#34;*&#34;:
+      return True
+
+  return False
+
+  
+def edit_distance(word1, word2):              # edit distance b/w word1 and word2
+  &#39;&#39;&#39;Find the edit distance between two strings.
+
+      Parameters:
+        **word1** ( *str* ): First string
+        **word2** ( *str* ): Second string
+
+      Returns:
+        Edit distance between the two strings.
+  &#39;&#39;&#39;
+  l1 = len(word1)
+  l2 = len(word2)
+  if l1 == 0:
+    return l2
+  if l2 == 0:
+    return l1
+
+  dp = [[0 for i in range(l2 + 1)] for j in range(l1 + 1)]
+
+  for x in range(l2 + 1):
+    dp[0][x] = x
+  for x in range(l1 + 1):
+    dp[x][0] = x
+  
+  for i in range(1, l1 + 1):
+    for j in range(1, l2 + 1):
+      if word1[i-1] == word2[j-1]:
+        dp[i][j] = dp[i-1][j-1]
+      else:
+        dp[i][j] = 1 + min(dp[i-1][j-1], dp[i-1][j], dp[i][j-1])
+  
+  return dp[l1][l2]</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="helper.contains_star"><code class="name flex">
+<span>def <span class="ident">contains_star</span></span>(<span>word)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Find if the char * appears in a word.</p>
+<h2 id="parameters">Parameters</h2>
+<p><strong>word</strong> ( <em>str</em> ): String to be searched.</p>
+<h2 id="returns">Returns</h2>
+<p>Boolean value True if * occurs in the string <em>word</em> and False otherwise.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def contains_star(word):                      # Check if the word contains a *
+  &#39;&#39;&#39;Find if the char * appears in a word.
+     Parameters:
+          **word** ( *str* ): String to be searched.
+      
+     Returns:
+          Boolean value True if * occurs in the string *word* and False otherwise.
+  &#39;&#39;&#39;
+  for v in word:
+    if v==&#34;*&#34;:
+      return True
+
+  return False</code></pre>
+</details>
+</dd>
+<dt id="helper.edit_distance"><code class="name flex">
+<span>def <span class="ident">edit_distance</span></span>(<span>word1, word2)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Find the edit distance between two strings.</p>
+<h2 id="parameters">Parameters</h2>
+<p><strong>word1</strong> ( <em>str</em> ): First string
+<strong>word2</strong> ( <em>str</em> ): Second string</p>
+<h2 id="returns">Returns</h2>
+<p>Edit distance between the two strings.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def edit_distance(word1, word2):              # edit distance b/w word1 and word2
+  &#39;&#39;&#39;Find the edit distance between two strings.
+
+      Parameters:
+        **word1** ( *str* ): First string
+        **word2** ( *str* ): Second string
+
+      Returns:
+        Edit distance between the two strings.
+  &#39;&#39;&#39;
+  l1 = len(word1)
+  l2 = len(word2)
+  if l1 == 0:
+    return l2
+  if l2 == 0:
+    return l1
+
+  dp = [[0 for i in range(l2 + 1)] for j in range(l1 + 1)]
+
+  for x in range(l2 + 1):
+    dp[0][x] = x
+  for x in range(l1 + 1):
+    dp[x][0] = x
+  
+  for i in range(1, l1 + 1):
+    for j in range(1, l2 + 1):
+      if word1[i-1] == word2[j-1]:
+        dp[i][j] = dp[i-1][j-1]
+      else:
+        dp[i][j] = 1 + min(dp[i-1][j-1], dp[i-1][j], dp[i][j-1])
+  
+  return dp[l1][l2]</code></pre>
+</details>
+</dd>
+<dt id="helper.finding_all_unique_words_and_freq"><code class="name flex">
+<span>def <span class="ident">finding_all_unique_words_and_freq</span></span>(<span>words)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Find all the unique words and their frequencies in a string.</p>
+<h2 id="parameters">Parameters</h2>
+<p><strong>words</strong> ( <em>str</em> ): String to be searched for unique words.</p>
+<h2 id="returns">Returns</h2>
+<p>A dictionary with key as a word and value as frequency for that word
+for each word in the parameter <strong>words</strong>.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def finding_all_unique_words_and_freq(words):
+    &#39;&#39;&#39;Find all the unique words and their frequencies in a string.
+        
+        Parameters:
+          **words** ( *str* ): String to be searched for unique words.
+        
+        Returns:
+          A dictionary with key as a word and value as frequency for that word
+          for each word in the parameter **words**.
+    &#39;&#39;&#39;
+    words_unique = []   # array to store unique words in &#39;words&#39;
+    word_freq = {}      # dictionary to store frequency of each word in &#39;words&#39;
+
+    for word in words:               
+        if word not in words_unique:        # Fill words_unique array
+            words_unique.append(word)
+    
+    for word in words_unique:
+        word_freq[word] = words.count(word)  # Fill word_freq dict
+    return word_freq</code></pre>
+</details>
+</dd>
+<dt id="helper.finding_freq_of_word_in_doc"><code class="name flex">
+<span>def <span class="ident">finding_freq_of_word_in_doc</span></span>(<span>word, words)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Get the number of times a word occurs in a string.</p>
+<h2 id="parameters">Parameters</h2>
+<p><strong>word</strong> ( <em>str</em> ): String to find</p>
+<p><strong>words</strong> ( <em>str</em> ): String to be searched for finding 'word'</p>
+<h2 id="returns">Returns</h2>
+<p>Number of occurences of <em>word</em> in <em>words</em>.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def finding_freq_of_word_in_doc(word,words):  # Find count of &#39;word&#39; in &#39;words&#39;
+  &#39;&#39;&#39;Get the number of times a word occurs in a string.
+    
+    Parameters:
+        **word** ( *str* ): String to find
+
+        **words** ( *str* ): String to be searched for finding &#39;word&#39;
+    
+    Returns:
+      Number of occurences of *word* in *words*.
+
+  &#39;&#39;&#39;
+  return words.count(word)</code></pre>
+</details>
+</dd>
+<dt id="helper.remove_special_characters"><code class="name flex">
+<span>def <span class="ident">remove_special_characters</span></span>(<span>text)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Remove special characters in a string.</p>
+<h2 id="parameters">Parameters</h2>
+<p><strong>text</strong> ( <em>str</em> ): String to remove special characters from.</p>
+<h2 id="returns">Returns</h2>
+<p>Modified string which contains only alphanumeric characters from the original string.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def remove_special_characters(text):          # Remove all chars
+  &#39;&#39;&#39;Remove special characters in a string.
+
+     Parameters:
+          **text** ( *str* ): String to remove special characters from.
+      
+     Returns:
+          Modified string which contains only alphanumeric characters from the original string.
+  &#39;&#39;&#39;
+  regex = re.compile(&#39;[^a-zA-Z0-9\s]&#39;)      # except alphanumeric and spaces
+  text_returned = re.sub(regex,&#39;&#39;,text)
+  return text_returned</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="helper.contains_star" href="#helper.contains_star">contains_star</a></code></li>
+<li><code><a title="helper.edit_distance" href="#helper.edit_distance">edit_distance</a></code></li>
+<li><code><a title="helper.finding_all_unique_words_and_freq" href="#helper.finding_all_unique_words_and_freq">finding_all_unique_words_and_freq</a></code></li>
+<li><code><a title="helper.finding_freq_of_word_in_doc" href="#helper.finding_freq_of_word_in_doc">finding_freq_of_word_in_doc</a></code></li>
+<li><code><a title="helper.remove_special_characters" href="#helper.remove_special_characters">remove_special_characters</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>
